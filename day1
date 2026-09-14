@@ -1,0 +1,20 @@
+//Write a program to input two numbers and display their sum.//
+#include <stdio.h>
+
+int main() {
+    double num1, num2; // Using double to handle integers and decimals
+
+    printf("Enter two numbers: ");
+
+    // Validate that exactly two numbers are entered
+    if (scanf("%lf %lf", &num1, &num2) != 2) {
+        printf("Invalid input. Please enter numeric values only.\n");
+        return 1; // Exit with error code
+    }
+
+    double sum = num1 + num2;
+
+    printf("Sum of %.2lf and %.2lf is: %.2lf\n", num1, num2, sum);
+
+    return 0; // Successful execution
+}
